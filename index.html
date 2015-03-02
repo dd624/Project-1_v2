@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+<link href='http://fonts.googleapis.com/css?family=Shadows+Into+Light' rel='stylesheet' type='text/css'>
+    <title>A Happy Font Book</title>
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+    
+
+<style>
+    /* Unknown error of having style in between head and body */
+
+body{
+ background:yellow;   
+}
+    
+.special{
+background: black;
+color:yellow;
+}
+h1 {
+font-family:"Shadows Into Light",cursive;
+line-height: 80%;
+}
+
+h1:hover{
+color:white;
+    scale:1.5;
+}
+
+p{
+font-family: "Helvetica Neue",helvetica,sans-serif;
+font-weight:200;
+}
+
+a:link {
+text-decoration: none;
+color:white;
+}
+
+a:visited{
+color:white;
+}
+
+a:hover{
+text-decoration: line-through;
+color:white;
+}
+
+.title{
+position:absolute;
+top:25%;
+left:25%;
+right:25%;
+bottom:25%;
+}
+    
+button{
+background-color: yellow;
+border: 1px solid #000;
+font-family: "Helvetica Neue",sans-serif;
+font-weight:200;
+}
+
+button:hover{
+background-color: black;
+color:yellow;
+border: 1px solid #ffff00;
+}
+
+.button2{
+font-family: "Helvetica Neue",sans-serif;
+font-weight:200;
+border: 1px solid #fff;
+padding:5px 50px 5px 50px;
+color:#fff;
+}
+
+.button2:hover{
+font-family: "Helvetica Neue",sans-serif;
+font-weight:200;
+border: 1px solid #fff;
+padding:5px 50px 5px 50px;
+}
+    
+@media(max-width: 1580px) {
+  h1 {
+    font-size: 100px;
+  }
+    
+}
+@media(max-width: 980px) {
+  h1 {
+    font-size: 72px;
+  }
+    p {
+    font-size: 12px;
+  }
+.button2 {
+    font-size: 12px;
+  }
+}
+@media(max-width: 600px) {
+  h1 {
+    font-size: 48px;
+  }
+    p {
+    font-size: 10px;
+  }
+    .button2 {
+    font-size: 10px;
+  }
+}
+
+</style>
+
+<body>
+
+<div class="title">
+<h1>A Happy Font Book</a> </h1>
+<p>Massimo Vignelli says typefaces should not be expressive; you can say "I love you" in Helvetica, but you can also say "I hate you" in Helvetica. But I believe that different typefaces have different persoanlities. So, does every font express happiness in the same way? 
+</br>A typographical exploration by Weiyi(Dawn) Cai.
+</p></br></br>
+<a class="button2" href="main.html">Take a look</a>
+</div>
+<button class="switcher" onclick="myFunction()">Switch</button>
+<p id="demo"></p>
+
+
+ <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+<script>
+$( document ).ready(function() {
+    $('.switcher').on('click',function(){
+        $('body').toggleClass('special');
+    });
+    
+});
+
+</script>
+
+
+<script>
+//function myFunction() {
+//    document.body.style.backgroundColor = "black";
+//    document.body.style.color="yellow";
+//}
+</script>
+
+</body>
+</html>
